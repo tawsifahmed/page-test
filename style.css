@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('./font/neuemachina-regular-webfont.woff2') format('woff2'),
+        /* Modern Browsers */
+        url('./font/neuemachina-regular-webfont.woff') format('woff');
+    /* Older Browsers */
+
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Neue Machina', sans-serif;
+    background-color: #CACACA !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button {
+    font-family: 'Neue Machina', sans-serif;
+}
+
+.default-bg {
+    background-color: #CACACA !important;
+}
+
+.bold-text {
+    font-family: 'Neue Machina', sans-serif;
+    font-weight: bold;
+}
+
+.nav-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.login-btn {
+    background: none;
+    border: none;
+    font-family: 'Neue Machina', sans-serif;
+    padding: 14px 47px 14px 47px;
+
+}
+
+.signup-btn {
+    background: black;
+    color: white;
+    border: none;
+    font-family: 'Neue Machina', sans-serif;
+    padding: 14px 47px 14px 47px;
+}
+
+.banner1 {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.email-field {
+    border-radius: 0px !important;
+    width: 280px !important;
+    height: 52px !important;
+}
+
+.get-started-btn {
+    background-color: black !important;
+    color: white !important;
+    border-radius: 0px !important;
+    height: 52px !important;
+
+}
+
+.container-raw {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    .container-raw {
+        width: 750px;
+    }
+
+
+}
+
+
+@media (min-width: 992px) {
+    .container-raw {
+        width: 970px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .container-raw {
+        width: 1170px;
+    }
+}
+
+@media (max-width: 425px) {
+    .banner1 {
+        flex-wrap: wrap;
+    }
+
+    .email-field {
+        border-radius: 0px !important;
+        width: 180px !important;
+        height: 52px !important;
+    }
+
+
+}
