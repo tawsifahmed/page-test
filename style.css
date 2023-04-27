@@ -174,21 +174,25 @@ button {
     margin-bottom: 165px;
 }
 
-.pricing-card>.join-btn>button {
+.pricing-card>.join-btn>.bb {
     background: black;
     color: white;
     border: none;
     font-family: 'Neue Machina', sans-serif;
     padding: 14px 100px 14px 100px;
+    text-align: center;
+    cursor: pointer;
 }
 
-.pricing-card-black>.join-btn>button {
+.pricing-card-black>.join-btn>p {
     background: white;
     color: black;
     border: none;
     font-family: 'Neue Machina', sans-serif;
     padding: 14px 100px 14px 100px;
+    text-align: center;
 }
+
 
 .faq-section {
     margin-bottom: 200px;
@@ -256,7 +260,13 @@ button {
 
 .footer-right {
     display: flex;
-    gap: 80px;
+    gap: 30px;
+}
+
+.footer-last-section {
+
+    padding-bottom: 26px;
+    margin-top: 20px;
 }
 
 .container-raw {
@@ -284,6 +294,13 @@ button {
 @media (min-width: 1200px) {
     .container-raw {
         width: 1170px;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-right {
+        gap: 10px;
+        margin-left: -200px;
     }
 }
 
@@ -342,6 +359,23 @@ button {
         margin-left: -32px;
         margin-top: -40px;
     }
+}
 
 
+@media (max-width: 768px) {
+
+    .pricing-cards {
+        gap: 6px;
+    }
+
+    .pricing-card {
+
+        padding: 20px 4px 20px 4px;
+    }
+
+    .pricing-card-black {
+
+        padding: 20px 4px 20px 4px;
+
+    }
 }
