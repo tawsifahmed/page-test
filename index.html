@@ -15,7 +15,7 @@
 <body>
     <!----------- Navbar Section ----------->
     <div class="nav-container">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg mt-2">
             <div class="container-fluid default-bg">
                 <a class="navbar-brand" href="#">
                     <img src="./assets/brand-logo.svg" alt="">
@@ -96,11 +96,11 @@
                     people to individual documents. It’s up to you. Stakeholders can check <br>
                     out designs in their web browser, test prototypes and leave feedback for free.
                 </p>
-                <ul class="about-us-points">
-                    <li>Shared Cloud Libraries, for a single source of truth</li>
-                    <li>Prototype previews for user testing and research</li>
-                    <li>Easy organization with projects</li>
-                    <li>Free developer handoff, right inside the browser</li>
+                <ul class="points-list">
+                    <li class="bulletpoint-gap">Shared Cloud Libraries, for a single source of truth</li>
+                    <li class="bulletpoint-gap">Prototype previews for user testing and research</li>
+                    <li class="bulletpoint-gap">Easy organization with projects</li>
+                    <li class="bulletpoint-gap">Free developer handoff, right inside the browser</li>
                     <li>Two-factor authentication and SSO</li>
                 </ul>
             </div>
@@ -170,22 +170,196 @@
 
         <!-------------- Pricing Section ---------------->
         <div class="even-digit-section section-vertical-gap">
-            <div class="col-6">
+            <div class="me-5">
                 <img class="img-fluid" src="./assets/Illustration_4.png" alt="">
             </div>
-            <div class="col-6">
-                <h6 class="section-title">PRICING</h6>
-                <h1>
+            <div class="pricing-details">
+                <H6 class="pricing-title">PRICING</H6>
+                <h1 style="text-align: end;">
                     Select a membership level
                     the right price for you.
                 </h1>
-                <p class="section-details">Prices listed in USD. Taxes may apply.
+                <p style="text-align: end;" class="section-details">Prices listed in USD. Taxes may apply.
                     By using program you agree to our terms and policies.
                 </p>
             </div>
         </div>
+        <!----- Detailed Pricing --------->
+        <div class="pricing-cards">
+            <div class="pricing-card">
+                <div class="pricing-digit">
+                    <div class="d-flex">
+                        <p>$ <span>
+                                <h1>49</h1>
+                            </span></p>
+                        <p class="mt-3">per month</p>
+                    </div>
+                    <p>A pay-once license, just for you</p>
+                </div>
+                <div class="pricing-bulletpoints">
+                    <ul class="points-list">
+                        <li class="bulletpoint-gap">The Mac app — yours to keep</li>
+                        <li class="bulletpoint-gap">Beautiful White_level</li>
+                        <li>One year of saving to Cloud</li>
+                    </ul>
+                </div>
+                <div class="join-btn">
+                    <button>Join Now</button>
+                </div>
+            </div>
+            <div class="pricing-card-black">
+                <div class="pricing-digit">
+                    <div class="d-flex">
+                        <p>$ <span>
+                                <h1>99</h1>
+                            </span></p>
+                        <p class="mt-3">per month</p>
+                    </div>
+                    <p>A pay-once license, just for you</p>
+                </div>
+                <div class="pricing-bulletpoints">
+                    <ul class="points-list">
+                        <li class="bulletpoint-gap">The Mac app — yours to keep</li>
+                        <li class="bulletpoint-gap">A personal Cloud workspace</li>
+                        <li>All tools, just for you</li>
+                    </ul>
+                </div>
+                <div class="join-btn">
+                    <button>Join Now</button>
+                </div>
+            </div>
+            <div class="pricing-card">
+                <div class="pricing-digit">
+                    <div class="d-flex">
+                        <p>$ <span>
+                                <h1>299</h1>
+                            </span></p>
+                        <p class="mt-3">per month</p>
+                    </div>
+                    <p>A pay-once license, just for you</p>
+                </div>
+                <div class="pricing-bulletpoints">
+                    <ul class="points-list">
+                        <li class="bulletpoint-gap">The Mac app — yours to keep</li>
+                        <li class="bulletpoint-gap">Beautiful White_level</li>
+                        <li>One year of saving to Cloud</li>
+                    </ul>
+                </div>
+                <div class="join-btn">
+                    <button>Join Now</button>
+                </div>
+            </div>
+        </div>
 
+        <!------------------- FAQ Section ------------------>
+        <div class="banner1 section-vertical-gap faq-section">
+            <div>
+                <div>
+                    <h6 class="section-title">FAQS</h6>
+                    <h1>
+                        Common Questions.
+                    </h1>
+                    <p>The online form also provides links to a set of frequently <br>
+                        asked questions, other information materials related to <br>
+                        the financial disclosure programme.</p>
+                </div>
+                <div class="faq-accordions">
+                    <div class="accordion-collapsed">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <b class="questions mb-0">How much does a Teams subscription cost?</b>
+                            <img src="./assets/plus-sign.svg" alt="">
+                        </div>
+                        <p class="thin-text">Contributors are members of your team who need access to use <br>
+                            the Mac app to create and edit Sketch documents. These prices don’t include sales
+                            tax, which may still apply. Head over to our pricing page to get full details.</p>
+                    </div>
+                    <hr>
+                    <div class="accordions-closed">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <b class="questions mb-0">Do I still need to purchase licenses for the Mac app?</b>
+                            <img src="./assets/minus-sign.svg" alt="">
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <b class="questions mb-0">What are the differences between Contributors and Viewers?</b>
+                            <img src="./assets/minus-sign.svg" alt="">
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <b class="questions mb-0">How long does the free Teams subscription trial last?</b>
+                            <img src="./assets/minus-sign.svg" alt="">
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <b class="questions mb-0">Will program for Teams replace volume licensing?</b>
+                            <img src="./assets/minus-sign.svg" alt="">
+                        </div>
+                        <hr>
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <img class="img-fluid" src="./assets/Illustration_5.png" alt="">
+            </div>
+
+        </div>
     </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="footer-container white-text">
+            <div class="footer-mid-section">
+                <div class="footer-left">
+                    <div>
+                        <img class="footer-brand-logo" src="./assets/footer-brand-logo.svg" alt="">
+                    </div>
+                    <div class="footer-social-icons">
+                        <img src="./assets/social_fb.svg" alt="">
+                        <img src="./assets/social_tw.svg" alt="">
+                        <img src="./assets/social_gl.svg" alt="">
+                        <img src="./assets/social_in.svg" alt="">
+                        <img src="./assets/social_yt.svg" alt="">
+                    </div>
+                    <div>
+                        <b class="white-text">Want to recieve our awesome
+                            stories?</b>
+                    </div>
+                    <div>
+                        <form class="d-flex email-subscribe" role="search">
+                            <input class="form-control footer-email-field" type="search" placeholder="Enter your email"
+                                aria-label="Search">
+                            <button class="btn subscribe-btn" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="email-info">
+                        <b>Email</b>
+                        <p>info@the18.design</p>
+                    </div>
+                    <div class="footer-ul-links">
+                        <ul class="hide-bulletpoints">
+                            <li>About Us</li>
+                            <li>How it works</li>
+                            <li>Pricing</li>
+                            <li>FAQs</li>
+                        </ul>
+                    </div>
+                    <div class="footer-ul-links">
+                        <ul class="hide-bulletpoints">
+                            <li>Lead generation</li>
+                            <li>Customer engagement</li>
+                            <li>Customer support</li>
+                            <li>Help Center Articles</li>
+                            <li>Outbound Messages</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js

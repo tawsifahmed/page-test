@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* --------------------- neue machina font configuration ---------------------- */
 @font-face {
     font-family: 'Neue Machina';
     src: url('./font/neuemachina-regular-webfont.woff2') format('woff2'),
@@ -17,7 +18,7 @@
 
 body {
     font-family: 'Neue Machina', sans-serif;
-    background-color: #CACACA !important;
+    background-color: rgba(240, 240, 240, 1) !important;
 }
 
 h1,
@@ -28,17 +29,27 @@ h5,
 h6,
 p,
 a,
+b,
+li,
 button {
     font-family: 'Neue Machina', sans-serif;
 }
 
 .default-bg {
-    background-color: #CACACA !important;
+    background-color: rgba(240, 240, 240, 1) !important;
 }
 
 .bold-text {
     font-family: 'Neue Machina', sans-serif;
-    font-weight: bold;
+    font-weight: bolder;
+}
+
+.white-text {
+    color: white;
+}
+
+.hide-bulletpoints {
+    list-style-type: none;
 }
 
 .nav-container {
@@ -55,7 +66,11 @@ button {
     border: none;
     font-family: 'Neue Machina', sans-serif;
     padding: 14px 47px 14px 47px;
+}
 
+.login-btn:hover {
+    background-color: black;
+    color: white;
 }
 
 .signup-btn {
@@ -106,8 +121,7 @@ button {
 
 }
 
-
-.about-us-points>li {
+.points-list>li {
     font-size: 20px;
     line-height: 28px;
     list-style-type: square;
@@ -117,9 +131,132 @@ button {
     margin-top: 200px;
 }
 
-.details-title {
-    font-size: 28px;
-    line-height: 27.02px;
+.pricing-details {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.pricing-title {
+    border: 1px solid black;
+    padding: 6px 16px 6px 16px;
+}
+
+.pricing-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.pricing-card {
+    border: 1px solid black;
+    padding: 20px 40px 20px 40px;
+}
+
+.pricing-card-black {
+    border: 1px solid black;
+    padding: 20px 40px 20px 40px;
+    background-color: black;
+    color: white;
+}
+
+.pricing-digit {
+    margin-bottom: 61px;
+}
+
+.bulletpoint-gap {
+    margin-bottom: 26px;
+}
+
+.pricing-bulletpoints {
+    margin-bottom: 165px;
+}
+
+.pricing-card>.join-btn>button {
+    background: black;
+    color: white;
+    border: none;
+    font-family: 'Neue Machina', sans-serif;
+    padding: 14px 100px 14px 100px;
+}
+
+.pricing-card-black>.join-btn>button {
+    background: white;
+    color: black;
+    border: none;
+    font-family: 'Neue Machina', sans-serif;
+    padding: 14px 100px 14px 100px;
+}
+
+.faq-section {
+    margin-bottom: 200px;
+}
+
+.faq-accordions {
+    margin-top: 50px;
+}
+
+.thin-text {
+    font-size: 15px;
+    font-weight: 200;
+    color: rgb(64, 64, 64);
+}
+
+.footer {
+    background-color: black;
+}
+
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.footer-mid-section {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    gap: 158px;
+
+}
+
+.footer-brand-logo {
+    fill: rgb(255, 255, 255);
+}
+
+.footer-social-icons {
+    margin-top: 40px;
+}
+
+.footer-email-field {
+    border-radius: 0px !important;
+    width: 280px !important;
+    height: 52px !important;
+    border: 1px solid white;
+    background-color: black !important;
+}
+
+.footer-email-field::placeholder {
+    color: white !important;
+}
+
+.email-subscribe {
+    margin-top: 36px;
+}
+
+.subscribe-btn {
+    background-color: white !important;
+    color: black !important;
+    border-radius: 0px !important;
+    height: 52px !important;
+    padding: 13px 46px 13px 46px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 80px;
 }
 
 .container-raw {
@@ -129,25 +266,20 @@ button {
     margin-left: auto;
 }
 
-
-
-
-
+/*--------------------- media query for responsiveness -------------------*/
 @media (min-width: 768px) {
     .container-raw {
         width: 750px;
     }
 
-
+    .footer-right {}
 }
-
 
 @media (min-width: 992px) {
     .container-raw {
         width: 970px;
     }
 }
-
 
 @media (min-width: 1200px) {
     .container-raw {
@@ -168,6 +300,47 @@ button {
 
     .even-digit-section {
         flex-direction: column-reverse;
+    }
+
+    .bulletpoint-gap {
+        margin-bottom: 20px;
+    }
+
+    .pricing-cards {
+        flex-direction: column;
+    }
+
+    .pricing-card {
+        padding: 30px 20px 20px 20px;
+    }
+
+    .pricing-card-black {
+        padding: 30px 20px 20px 20px;
+    }
+
+    .pricing-bulletpoints {
+        margin-bottom: 65px;
+    }
+
+    .footer-mid-section {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .footer-right {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .subscribe-btn {
+
+        height: 52px !important;
+        padding: 7px 20px 7px 20px;
+    }
+
+    .footer-ul-links {
+        margin-left: -32px;
+        margin-top: -40px;
     }
 
 
