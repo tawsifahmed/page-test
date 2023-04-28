@@ -232,6 +232,15 @@ button {
     cursor: pointer;
 }
 
+/* bootstrap */
+
+.accordion-item,
+.accordion-header,
+.accordion-button {
+    background-color: rgba(240, 240, 240, 1) !important;
+    border: none !important;
+}
+
 
 .faq-section {
     margin-bottom: 200px;
