@@ -52,6 +52,15 @@ button {
     list-style-type: none;
 }
 
+.hide-bulletpoints>li {
+    cursor: pointer;
+}
+
+.hide-bulletpoints>li:hover {
+    text-decoration: underline;
+    transition: .1s ease-in;
+}
+
 .nav-container {
     width: 90%;
     margin: 0 auto;
@@ -59,6 +68,10 @@ button {
 
 .navbar-toggler {
     border: none !important;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
 }
 
 .login-btn {
@@ -79,6 +92,16 @@ button {
     border: none;
     font-family: 'Neue Machina', sans-serif;
     padding: 14px 47px 14px 47px;
+}
+
+.signup-btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: .1s ease-out;
+    position: sticky;
+    padding: 13px 46px 13px 46px;
+    /* margin-left: -1px; */
 }
 
 .banner1 {
@@ -103,6 +126,14 @@ button {
     border: 1px solid black;
     display: inline-block;
     padding: 6px 16px 6px 16px;
+}
+
+.section-title:hover {
+    background-color: black;
+    color: white;
+    transition: .1s ease-out;
+    cursor: default;
+
 }
 
 .get-started-btn {
@@ -140,6 +171,13 @@ button {
 .pricing-title {
     border: 1px solid black;
     padding: 6px 16px 6px 16px;
+}
+
+.pricing-title:hover {
+    background-color: black;
+    color: white;
+    transition: .1s ease-out;
+    cursor: default;
 }
 
 .pricing-cards {
@@ -191,6 +229,7 @@ button {
     font-family: 'Neue Machina', sans-serif;
     padding: 14px 100px 14px 100px;
     text-align: center;
+    cursor: pointer;
 }
 
 
@@ -200,6 +239,14 @@ button {
 
 .faq-accordions {
     margin-top: 50px;
+}
+
+.plus-sign:hover {
+    cursor: pointer;
+}
+
+.minus-sign:hover {
+    cursor: pointer;
 }
 
 .thin-text {
@@ -234,6 +281,10 @@ button {
     margin-top: 40px;
 }
 
+.footer-social-icons>img {
+    cursor: pointer;
+}
+
 .footer-email-field {
     border-radius: 0px !important;
     width: 280px !important;
@@ -264,7 +315,8 @@ button {
 }
 
 .footer-last-section {
-
+    display: flex;
+    justify-content: space-between;
     padding-bottom: 26px;
     margin-top: 20px;
 }
